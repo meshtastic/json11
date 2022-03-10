@@ -1,11 +1,12 @@
 /*
- * Define JSON11_TEST_CUSTOM_CONFIG to 1 if you want to build this tester into
- * your own unit-test framework rather than a stand-alone program.  By setting
+ * Define JSON11_TEST_STANDALONE_CONFIG to 1 if you want to build this tester into
+ * stand-alone program rather than a your own unit-test framework. By setting
  * The values of the variables included below, you can insert your own custom
  * code into this file as it builds, in order to make it into a test case for
  * your favorite framework.
  */
-#if !JSON11_TEST_CUSTOM_CONFIG
+
+#if JSON11_TEST_STANDALONE_CONFIG
 #define JSON11_TEST_CPP_PREFIX_CODE
 #define JSON11_TEST_CPP_SUFFIX_CODE
 #define JSON11_TEST_STANDALONE_MAIN 1
@@ -14,7 +15,7 @@
 #ifdef NDEBUG
 #undef NDEBUG//at now assert will work even in Release build
 #endif
-#endif // JSON11_TEST_CUSTOM_CONFIG
+#endif // JSON11_TEST_STANDALONE_CONFIG
 
 /*
  * Enable or disable code which demonstrates the behavior change in Xcode 7 / Clang 3.7,
