@@ -1,0 +1,31 @@
+{
+  "name": "json11",
+  "version": "1.0.1",
+  "description": "A microscopic JSON library for C++11",
+  "keywords": "c++ json",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/meshtastic/json11.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Dropbox Inc.",
+      "email": "info@dropbox.com",
+      "url": "https://www.dropbox.com/"
+    },
+    {
+      "name": "Michael Kleinhenz",
+      "email": "michael@kleinhenz.net",
+      "url": "https://github.com/michaelkleinhenz",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/meshtastic/json11",
+  "dependencies": {
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
