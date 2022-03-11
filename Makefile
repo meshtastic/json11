@@ -7,7 +7,7 @@ CANARY_ARGS = -DJSON11_ENABLE_DR1467_CANARY=$(JSON11_ENABLE_DR1467_CANARY)
 endif
 
 test: json11.cpp json11.hpp test.cpp
-	$(CXX) $(CANARY_ARGS) -O -std=c++11 json11.cpp test.cpp -o test -fno-rtti -fno-exceptions
+	$(CXX) $(CANARY_ARGS) -DJSON11_TEST_STANDALONE_CONFIG -O -std=c++11 json11.cpp test.cpp -o test -fno-rtti -fno-exceptions
 
 clean:
 	if [ -e test ]; then rm test; fi
