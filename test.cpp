@@ -5,7 +5,7 @@
  * code into this file as it builds, in order to make it into a test case for
  * your favorite framework.
  */
-
+#if JSON11_TEST_ENABLED
 #if JSON11_TEST_STANDALONE_CONFIG
 #define JSON11_TEST_CPP_PREFIX_CODE
 #define JSON11_TEST_CPP_SUFFIX_CODE
@@ -285,3 +285,5 @@ int main(int argc, char **argv) {
 // Insert user-defined suffix code (function definitions, etc)
 // to set up a custom test suite
 JSON11_TEST_CPP_SUFFIX_CODE
+
+#endif // JSON11_TEST_ENABLED
